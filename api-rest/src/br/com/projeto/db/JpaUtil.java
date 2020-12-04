@@ -15,7 +15,6 @@ import org.hibernate.tool.schema.internal.HibernateSchemaManagementTool;
  * 29 de nov de 2020
  * https://github.com/jaimedessilva/api-user-rest
  */
-
 public class JpaUtil {
 	
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("api-rest");

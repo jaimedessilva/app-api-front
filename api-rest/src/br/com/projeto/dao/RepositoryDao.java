@@ -18,7 +18,7 @@ import br.com.projeto.domain.Usuario;
 
 public class RepositoryDao {
 	
-	private List<Usuario> ls = new ArrayList<>();
+	private List<Usuario> ls = new ArrayList<Usuario>();
 	private JpaUtil jpa = new JpaUtil();
 	private EntityManager db = jpa.getEntityManager();
 	
