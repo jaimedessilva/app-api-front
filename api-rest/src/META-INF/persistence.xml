@@ -11,11 +11,11 @@
 			
 			<properties>
 			
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-152-175-141.compute-1.amazonaws.com:5433/d5ine1f0l41brb" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/db_api" />
 			
-			<property name="javax.persistence.jdbc.user" value="ytenwzmmerwnil" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
 			
-			<property name="javax.persistence.jdbc.password" value="e6291ebca447d7ed70c5eaf0de0c6ac3f37b730b4053746950672a3c294f2612" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
 			
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />	
 			
