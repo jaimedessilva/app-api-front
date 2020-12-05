@@ -3,11 +3,10 @@
  */
 package br.com.projeto.db;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
-import org.hibernate.tool.schema.internal.HibernateSchemaManagementTool;
 
 /**
  * api-rest
@@ -15,6 +14,7 @@ import org.hibernate.tool.schema.internal.HibernateSchemaManagementTool;
  * 29 de nov de 2020
  * https://github.com/jaimedessilva/api-user-rest
  */
+@ApplicationScoped
 public class JpaUtil {
 	
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("api-rest");
