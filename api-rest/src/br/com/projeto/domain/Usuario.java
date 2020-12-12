@@ -21,7 +21,7 @@ import com.sun.istack.NotNull;
 public class Usuario {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int id;
 	@NotBlank
 	@NotNull

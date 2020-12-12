@@ -6,10 +6,20 @@
 	<persistence-unit name="api-rest">
 		<!-- Provider -->
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-			<!-- Classe Entidade -->
-			<class>br.com.projeto.domain.Usuario</class>
-			
-			<properties>
+		<!-- Classe Entidade -->
+		<class>br.com.projeto.domain.Usuario</class>
+
+		<properties>
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+			<property name="hibernate.connection.shutdown" value="true" />
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<property name="hibernate.show_sql" value="true" />
+
+			<property name="hibernate.format_sql" value="false" />
 			
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/db_api" />
 			
@@ -17,19 +27,12 @@
 			
 			<property name="javax.persistence.jdbc.password" value="postgres" />
 			
-			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />	
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 			
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
-			
-			<property name="hibernate.connection.shutdown" value="true" />
-			
-			<property name="hibernate.hbm2ddl.auto" value="create" />
-			
-			<property name="hibernate.show_sql" value="true" />
-			
-			<property name="hibernate.format_sql" value="false" />
-	
+			<property name="javax.persistence.query.timeout" value="10000" />
+
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
 		</properties>
-	
+
 	</persistence-unit>
 </persistence>
