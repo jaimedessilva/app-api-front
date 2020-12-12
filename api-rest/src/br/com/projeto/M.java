@@ -1,7 +1,5 @@
 package br.com.projeto;
 
-import javax.transaction.Transactional;
-
 import br.com.projeto.dao.RepositoryDao;
 import br.com.projeto.domain.*;
 
